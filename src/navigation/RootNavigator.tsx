@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { RootStackParamList } from './types'
@@ -8,6 +7,8 @@ import SignUp from '../screens/SignUp'
 import PreProfileScreen from '../screens/PreProfileScreen'
 import VerifyOTPScreen from '../screens/VerifyOTPScreen'
 import CreatePINScreen from '../screens/CreatePINScreen'
+import MessageScreen from '../screens/MessageScreen'
+import InfoCallScreen from '../screens/InfoCallScreen'
 
 export default function RootNavigator() {
     const token = true
@@ -51,6 +52,16 @@ export default function RootNavigator() {
                     <Stack.Screen
                         name="Root"
                         component={BottomNavigator}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="MessageStack"
+                        component={MessageScreen}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="InfoCallStack"
+                        component={InfoCallScreen}
                         options={{ headerShown: false }}
                     />
                 </>

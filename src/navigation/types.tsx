@@ -13,6 +13,8 @@ export type RootStackParamList = {
     VerifyOTP: undefined;
     PreProfile: undefined;
     CreatePIN: undefined;
+    MessageStack: undefined;
+    InfoCallStack: undefined;
     Root: NavigatorScreenParams<RootTabParamList> | undefined;
 }
 

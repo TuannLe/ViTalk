@@ -1,6 +1,5 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import tw from 'twrnc'
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import IoniconsIcon from 'react-native-vector-icons/Ionicons'
 import ChatScreen from '../screens/ChatScreen'
